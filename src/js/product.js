@@ -8,6 +8,7 @@ $(function() {
         },
         dataType: "json",
         success: function(response) {
+            // console.log(response)
             var elm = response;
             var prolist = $('#danpinBox');
             var str = '';
