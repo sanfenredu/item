@@ -64,31 +64,39 @@ $(function() {
                     })
                     //删除
                 $('body').on('click', '.del', function(ev) {
-                        var data = $(ev.target.parentNode.parentNode).attr('data-id');
-                        shop.forEach(function(elm, i) {
-                            var arr1 = shop.filter((val, i) => {
-                                return val.id != data
-                            })
-                            shop = arr1;
-                            cookie.set('shop', JSON.stringify(shop), 2)
-                            location.reload();
+                    var data = $(ev.target.parentNode.parentNode).attr('data-id');
+                    shop.forEach(function(elm, i) {
+                        var arr1 = shop.filter((val, i) => {
+                            return val.id != data
                         })
-
+                        shop = arr1;
+                        cookie.set('shop', JSON.stringify(shop), 2)
+                        location.reload();
                     })
-                    // 全选
-                $('input[type="checkbox"]:first').on('click', function() {
-                    if ($(this).prop('checked')) {
-                        $('input[type="checkbox"]:not(:first)').attr('checked', 'checked')
-                    } else {
-                        $('input[type="checkbox"]:not(:first)').removeAttr('checked')
-                    }
-                    // console.log($('.td-qty').val())
 
                 })
                 $('body').on('change', '.td-qty', function() {
                     var pri = parseInt($(this).parent().parent().siblings('.price').children('.pri').html());
                     var sum = parseInt($(this).val())
                     $(this).parent().parent().siblings('.sum').children('.allsum').html(pri * sum);
+                })
+                var allsum = $('.allsum');
+                var allsums = 0;
+                for (var i = 0; i < allsum.length; i++) {
+                    console.log($(allsum[i]))
+                    allsums += parseInt($(allsum[i]).html())
+                }
+                // 全选
+                $('input[type="checkbox"]:first').on('click', function() {
+                    if ($(this).prop('checked')) {
+                        $('input[type="checkbox"]:not(:first)').attr('checked', 'checked')
+                        $('#sum').html(allsums);
+
+                    } else {
+                        $('input[type="checkbox"]:not(:first)').removeAttr('checked')
+                        $('#sum').html("0.00")
+                    }
+
                 })
             }
         })
