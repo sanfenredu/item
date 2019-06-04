@@ -1,0 +1,627 @@
+    body {
+        font-size: 12px;
+        font-family: "宋体";
+        color: #333;
+    }
+    /* header */
+    
+    .headerTopArea {
+        width: 100%;
+        height: 32px;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+        color: #808080;
+        background: #f7f7f7
+    }
+    
+    .headerTop {
+        width: 1200px;
+        line-height: 32px;
+        height: 31px;
+        margin: 0 auto;
+    }
+    /* header 右边 */
+    
+    .headerTop-right {
+        float: right;
+        width: 126px;
+        position: relative
+    }
+    
+    .headerTop-right .active {
+        width: 70px;
+        height: 18px;
+        line-height: 18px;
+        padding-top: 7px;
+        float: left;
+        cursor: pointer;
+        position: relative
+    }
+    /* 网站公告 */
+    
+    .active a {
+        display: block;
+        background: url(../img/notice.png) no-repeat scroll 0px 0px;
+        width: 55px;
+        padding-left: 26px;
+        text-align: left;
+        color: #808080;
+    }
+    
+    .headerTop-right .payattention {
+        float: right
+    }
+    
+    .payattention a {
+        display: block;
+        position: relative;
+        float: left;
+    }
+    /* 微信图片 */
+    
+    .payattention span {
+        float: left;
+        margin-left: 10px;
+        width: 20px;
+        cursor: pointer;
+        height: 21px;
+        background: url(../img/w1.jpg) no-repeat;
+        margin: 4px 0 0 10px
+    }
+    
+    .payattention b {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 30px;
+        width: 148px;
+        height: 169px;
+        border: 1px solid #e5e5e5;
+        background: url(../img/weixin.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 10;
+    }
+    /* 鼠标悬停时微信二维码 */
+    
+    .payattention a:hover b {
+        display: block
+    }
+    /* 微博图片 */
+    
+    .payattention .wb {
+        display: block;
+        width: 20px;
+        height: 25px;
+        margin-top: 4px;
+        background: url(../img/w2.jpg) no-repeat;
+    }
+    /* header 中间 */
+    
+    .headerTop-left {
+        float: right;
+        width: 303px;
+        position: relative
+    }
+    
+    .headerTop-left .welocome {
+        float: left
+    }
+    
+    .headerTop-left .order {
+        margin: 0px 0 0 13px;
+        width: 62px;
+        height: 32px;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    
+    .headerTop-left .order a {
+        color: #808080
+    }
+    
+    .order:hover a {
+        color: #a10000;
+    }
+    /* 搜索部分 */
+    
+    .vanclLogoSearch {
+        width: 1200px;
+        height: 62px;
+        margin: 20px auto 25px;
+        overflow: hidden;
+    }
+    
+    .vanclSearchfr {
+        width: 438px;
+        margin-top: 8px;
+        float: right;
+        vertical-align: top
+    }
+    
+    .searchTab {
+        height: 29px;
+    }
+    
+    .searchTab .searchfl {
+        float: left;
+        height: 29px;
+    }
+    
+    .searchfl .searchText {
+        width: 249px;
+        height: 27px;
+        padding: 0px 5px;
+        line-height: 27px;
+        border: 1px solid #c9caca;
+        vertical-align: top;
+        margin-right: -6px;
+    }
+    
+    .searchfl .searchBtn {
+        width: 49px;
+        height: 29px;
+        border: none;
+        cursor: pointer;
+        background: url(../img/vanclsprite.png) no-repeat -100px 0
+    }
+    
+    .searchTab .buycar {
+        width: 105px;
+        height: 27px;
+        border: 1px solid #c1383e;
+        float: right;
+        background: url(../img/vanclsprite.png) no-repeat scroll -154px 0px;
+        position: relative;
+    }
+    
+    .searchTab .buycar a {
+        display: block;
+        padding-left: 29px;
+        padding-top: 6px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    /* 热门搜索 */
+    
+    .vanclLogoSearch .hotWord {
+        width: 440px;
+        padding-top: 5px;
+        line-height: 18px;
+        color: #727171;
+        padding-left: 15px;
+    }
+    
+    .vanclLogoSearch .hotWord a {
+        padding-left: 5px;
+        color: #727171
+    }
+    
+    .warpper {
+        width: 1000px;
+        height: 22px!important;
+        margin: 30px auto!important;
+        padding-left: 200px;
+        /* logo包含块 */
+        position: relative;
+    }
+    /* logo */
+    
+    .logo {
+        float: left;
+        position: absolute;
+        left: 0px;
+        top: -24px
+    }
+    /* nav */
+    /* .nav {
+        padding-left: 0;
+    } */
+    
+    .nav>li {
+        float: left;
+        width: 99px;
+        line-height: 22px;
+        padding: 0px 0px 10px;
+        text-align: center;
+        font-size: 16px;
+        /* 包含块 */
+        position: relative;
+    }
+    
+    .nav>li a {
+        color: #727171;
+        font-family: "Microsoft YaHei";
+    }
+    
+    .nav>li a:hover {
+        color: #b81c22
+    }
+    /* hot 背景图 */
+    
+    .nav>li>a i {
+        display: block;
+        position: absolute;
+        left: 67px;
+        top: -5px;
+        width: 25px;
+        height: 13px;
+        background: url(../img/icon_hot.png)
+    }
+    /* a右边的背景图 */
+    
+    .nav>li>b {
+        display: block;
+        height: 16px;
+        width: 1px;
+        border-right: solid 1px #888;
+        position: absolute;
+        right: 1px;
+        top: 5px;
+    }
+    /* 二级导航 */
+    
+    .sub-nav {
+        position: absolute;
+        left: -2px;
+        top: 30px;
+        width: 99px;
+        height: 0px;
+        overflow: hidden;
+        /* visibility: hidden; */
+        background: #fff;
+        transition: all 0.5s;
+        z-index: 10;
+    }
+    
+    .nav>li:hover .sub-nav {
+        height: 400px;
+        /* visibility: visible */
+    }
+    /* 酒红色背景 */
+    
+    .sub-nav span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-top: 5px solid #B81C22;
+    }
+    
+    .sub-nav ul {
+        border: 1px solid #efefef;
+        border-top: 0px;
+        padding: 10px 0px;
+    }
+    
+    .sub-nav li {
+        text-align: center;
+        line-height: 35px;
+        background: #fff
+    }
+    /* 右下角小图标 */
+    
+    #main .bg {
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+    }
+    
+    #main .warpper-main {
+        width: 1200px;
+        margin: 0 auto
+    }
+    /* 背景图 */
+    
+    .slider {
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        width: 1200px;
+        height: 535px;
+    }
+    
+    .slider>div {
+        position: absolute;
+        width: 8000px;
+    }
+    
+    .slider>div img {
+        float: left;
+    }
+    
+    .slider>span {
+        position: absolute;
+        top: 260px;
+        font-size: 3em;
+        font-weight: 900;
+        color: #fff;
+        z-index: 1;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .slider>span:last-of-type {
+        right: 0;
+    }
+    /* 充值图 */
+    
+    .img-1 {
+        display: block;
+        margin: 40px 0;
+    }
+    /* 限购图 */
+    
+    .new-area {
+        height: 64px;
+        background: url(../img/mm.jpg) no-repeat 0 0;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        width: 1200px;
+        color: #474747;
+        font-weight: bold;
+        margin: 0 auto;
+        font-family: "Microsoft YaHei";
+    }
+    
+    .container ul {
+        overflow: hidden;
+        margin: 10px 0 15px 0;
+        padding: 0;
+        width: 1210px;
+    }
+    
+    .container ul li {
+        float: left;
+        width: 232px;
+        margin-right: 10px;
+    }
+    
+    .container .track {
+        color: #474747;
+        display: block
+    }
+    
+    .container .new-productname {
+        font-size: 16px;
+        margin-top: 10px;
+        height: 45px;
+        font-weight: normal;
+    }
+    
+    .container .new-price {
+        position: relative;
+    }
+    
+    .new-price .old-price {
+        display: block;
+        color: #d3d3d3;
+        font-size: 14px;
+        text-decoration: line-through;
+        font-weight: normal;
+    }
+    
+    .new-price .sale-price {
+        display: block;
+        color: #bb2b34;
+        font-size: 16px;
+    }
+    
+    .new-price .after-price {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .new-price .after-price em {
+        font-size: 24px;
+        font-style: normal;
+        color: #bb2b34;
+        font-weight: bolder;
+    }
+    /* 抢购图 */
+    
+    .img-2 {
+        display: block;
+    }
+    /*短袖衣服图片 */
+    
+    .tupian {
+        display: flex;
+        width: 1220px;
+        flex-wrap: wrap;
+        box-sizing: border-box
+    }
+    
+    .tupian li a {
+        display: flex;
+        flex-wrap: wrap
+    }
+    
+    .tupian li b {
+        display: block;
+        width: 27px;
+        height: 424px;
+        background: url(../img/sy0228g_04.jpg);
+        box-sizing: border-box
+    }
+    
+    .tupian li:nth-child(1) a::before,
+    .tupian li:nth-child(5) a::before,
+    .tupian li:nth-child(9) a::before {
+        content: "";
+        display: block;
+        width: 27px;
+        height: 424px;
+        background: url(../img/sy0228g_04.jpg);
+    }
+    /* 推选 共用代码 */
+    
+    h2 {
+        text-align: center;
+        line-height: 50px;
+        margin: 30px 0px;
+        font-family: "Microsoft YaHei";
+        color: #9a9a9a;
+        font-size: 18px;
+    }
+    
+    h3 {
+        height: 28px;
+        padding: 20px 12px;
+        line-height: 28px;
+        font-family: "Microsoft YaHei";
+        border: 1px solid #e8e7ec;
+        border-top: 0px;
+        font-size: 14px;
+    }
+    
+    h3 span {
+        float: right;
+        color: #a10000;
+        font-family: Arial;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    
+    h3 span em {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    
+    .recommend ul,
+    .bottom-rec ul,
+    .product ul {
+        display: flex;
+        flex-wrap: wrap
+    }
+    /* 优选推荐 */
+    
+    .recommend {
+        margin-top: 100px;
+    }
+    /* 推荐衣服 */
+    
+    .recommend ul li {
+        margin-right: 17px;
+    }
+    
+    .recommend li div {
+        margin-bottom: 16px
+    }
+    
+    .recommend ul li:nth-last-of-type(1) {
+        margin-right: 0
+    }
+    /* 下推荐 裤子 */
+    
+    .bottom-rec li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .bottom-rec li:nth-last-of-type(1) {
+        margin-right: 0
+    }
+    /* 精品 */
+    
+    .product ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .product li:nth-of-type(3),
+    .product li:nth-of-type(6) {
+        margin-right: 0
+    }
+    
+    .vanclFoot {
+        overflow: hidden;
+        width: 1118px;
+        height: 282px;
+        margin: 0px auto;
+        padding: 0px 40px 0px;
+        border: 1px solid #e0e0e1;
+        font-family: "Microsoft YaHei";
+        margin-bottom: 25px;
+        margin-top: 30px
+    }
+    
+    .vanclFoot ul li {
+        float: left;
+    }
+    
+    .vanclCustomer {
+        margin: 33px 0px 23px;
+        overflow: hidden;
+    }
+    
+    .vanclCustomer ul li {
+        width: 370px;
+        height: 138px;
+        border-right: 1px solid #e0e0e1;
+        margin-right: 0px;
+    }
+    
+    .vanclCustomer ul li p {
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+    }
+    
+    .onlineCustomer {
+        margin: 15px auto 30px
+    }
+    
+    #onlineTime {
+        margin: 0px auto;
+        width: 156px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 14px;
+        background: #b81c22;
+        color: #ffffff;
+    }
+    
+    .vanclCustomer ul li .seven {
+        margin: 20px 0;
+    }
+    
+    .vanclCustomer ul li:last-child(1) {
+        border-right: 0
+    }
+    
+    .vanclCustomer ul .twocode p {
+        margin-bottom: 10px
+    }
+    
+    .vanclOthers {
+        height: 26px;
+        padding: 17px 0px 14px;
+        background: #f8f8f8;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .vanclOthers ul li {
+        padding: 0px 65px;
+        line-height: 26px;
+        border-right: 1px solid #dadadb;
+        width: auto;
+        text-align: center;
+        margin-right: 0px;
+    }
+    
+    .vanclOthers ul li a {
+        color: #323232
+    }
+    
+    .vanclOthers ul li:last-child(1) {
+        border-right: 0
+    }

@@ -1,0 +1,55 @@
+footer .footertop {
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 0;
+    border-top: 1px solid #3e3a39;
+}
+
+.footertop p {
+    text-align: center;
+    line-height: 25px;
+    color: #3e3a39;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+
+.subfooter {
+    width: 980px;
+    margin: 0px auto 25px;
+    text-align: center;
+}
+
+.subfooter .bg {
+    background: url(../img/spritesbgtop.png) no-repeat;
+    height: 42px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.subfooter .redLogo {
+    background-position: 0 -581px;
+    width: 113px
+}
+
+.subfooter .wsjyBzzx {
+    background-position: 0 -675px;
+    width: 96px
+}
+
+.subfooter .vanclMsg {
+    background-position: -97px -675px;
+    width: 101px
+}
+
+.subfooter .vanclqingNian {
+    background-position: -202px -675px;
+    width: 42px
+}
+
+.subfooter .costumeOrg {
+    display: inline-block;
+    height: 45px;
+    width: 156px;
+    background: url(../img/spritesbgtop.png) no-repeat 0 -629px;
+}
