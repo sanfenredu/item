@@ -82,6 +82,7 @@ $(function() {
                     } else {
                         $('input[type="checkbox"]:not(:first)').removeAttr('checked')
                     }
+                    // console.log($('.td-qty').val())
 
                 })
                 $('body').on('change', '.td-qty', function() {

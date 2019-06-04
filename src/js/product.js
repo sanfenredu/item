@@ -14,7 +14,7 @@ $(function() {
             var pic = JSON.parse(elm.pic);
             str = `
                 <div class="breadNav">
-                <a href="./index.html">首页</a>
+                <a href="./fanke.html">首页</a>
                 <span>></span>
                 <a href="javascript:;">男装</a>
                 <span>></span>
